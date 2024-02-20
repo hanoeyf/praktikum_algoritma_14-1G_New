@@ -22,4 +22,14 @@ public class Buku14{
     void gantiHarga(int hrg){
         harga=hrg;
     }
+    public Buku14(){
+
+    }
+    public Buku14(String jd, String pg, int hm, int stok, int hr) {
+        judul=jd;
+        pengarang=pg;
+        halaman=hm;
+        this.stok=stok;
+        harga=hr;
+    }
 }
