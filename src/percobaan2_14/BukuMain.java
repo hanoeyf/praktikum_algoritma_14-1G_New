@@ -17,5 +17,9 @@ public class BukuMain {
     Buku14 bk2= new Buku14( "self reward", "maheera ayesha", 160, 29, 59000);
     bk2.terjual(11);
     bk2.tampilInformasi();
+
+    Buku14 bkHanifah = new Buku14("selalu Bahagia", "Hanifah Kurniasari", 290, 90, 70000);
+    bkHanifah.terjual(88);
+    bkHanifah.tampilInformasi();
 }
 }
