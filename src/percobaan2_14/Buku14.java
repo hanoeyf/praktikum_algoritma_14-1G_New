@@ -2,6 +2,7 @@ package percobaan2_14;
 public class Buku14{
     String judul, pengarang;
     int halaman, stok, harga;
+    double diskon, hargaBayar;
 
     void tampilInformasi(){
         System.out.println("judul: "+judul);
@@ -9,6 +10,7 @@ public class Buku14{
         System.out.println("halaman: "+halaman);
         System.out.println("sisa stok: "+stok);
         System.out.println("harga: "+harga);
+        System.out.println("harga bayar: "+ hargaBayar);
     }
     void terjual(int jumlah){
         if (stok>0){
@@ -22,6 +24,27 @@ public class Buku14{
     void gantiHarga(int hrg){
         harga=hrg;
     }
+    int hitungHargaTotal(int jumlahTerjual){
+         return harga * jumlahTerjual;
+  
+        
+    }
+    double hitungDiskon(int hargaTotal){
+        System.out.println(hargaTotal);
+        if (hargaTotal>150000){
+            return 0.12*hargaTotal;
+        } else if (hargaTotal > 75000 && hargaTotal<150000) {
+           return 0.05* hargaTotal;
+        } else {
+            return 0;
+        }
+    }
+    double hitungHargaBayar(int hargaTotal, double diskon){
+        hargaBayar = hargaTotal;
+        return hargaBayar;
+        
+        
+    }
     public Buku14(){
 
     }
@@ -32,4 +55,5 @@ public class Buku14{
         this.stok=stok;
         harga=hr;
     }
+
 }
