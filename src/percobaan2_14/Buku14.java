@@ -20,6 +20,6 @@ public class Buku14{
         stok += jumlah;
     }
     void gantiHarga(int hrg){
-        stok=hrg;
+        harga=hrg;
     }
 }
