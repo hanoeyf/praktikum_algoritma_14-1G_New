@@ -1,23 +1,26 @@
 package ArrayObject;
-
 import java.util.Scanner;
-
 public class arrayOfObject {
     public static void main(String[] args) {
-        persegiPanjang[] arrayPP = new persegiPanjang[3];
-        Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < 3; i++) {
+        Scanner sc14 = new Scanner(System.in);
+        System.out.print("Masukkan panjang array: ");
+        int n = sc14.nextInt();
+        persegiPanjang[] arrayPP = new persegiPanjang[n];
+
+        for (int i = 0; i < n; i++) {
             arrayPP[i] = new persegiPanjang();
             System.out.println("Persegi panjang ke-" + i);
-            System.out.print("Maukkan panjang: ");
-            arrayPP[i].panjang = sc.nextInt();
-            System.out.print("masukkan lebar: ");
-            arrayPP[i].lebar = sc.nextInt();
+            System.out.print("Masukkan panjang: ");
+            arrayPP[i].panjang = sc14.nextInt();
+            System.out.print("Masukkan lebar: ");
+            arrayPP[i].lebar = sc14.nextInt();
         }
-        for (int i = 0; i < 3; i++) {
-            System.out.println("persegi panjang ke-" + i);
-            System.out.println("panjang: " + arrayPP[i].panjang + ", lebar: " + arrayPP[i].lebar);
+        for (int i = 0; i < n; i++) {
+            System.out.println("Persegi panjang ke-" + i);
+            System.out.println("Panjang: " + arrayPP[i].panjang + ", Lebar: " + arrayPP[i].lebar);
         }
+  
+
         // arrayPP[0] = new persegiPanjang();
         // arrayPP[0].panjang = 110;
         // arrayPP[0].lebar = 30;
