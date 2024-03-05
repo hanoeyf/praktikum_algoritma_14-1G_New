@@ -1,5 +1,7 @@
 package ArrayBalok;
 
+import bangunRuang.kerucut;
+
 public class balok {
     public int panjang;
     public int lebar;
