@@ -2,10 +2,13 @@ package Minggu5;
 
 public class pangkat {
     public int angka, pangkat;
-    
-//commit ulang
-    double pangkatBF(int a, int n) {
-        double hasil = 0;
+    public pangkat (int angka, int pangkat){
+        this.angka = angka;
+        this.pangkat = pangkat;
+    }
+
+    int pangkatBF(int a, int n) {
+        int hasil = 1;
         for (int i = 0; i < n; i++) {
             hasil *= a;
         }
