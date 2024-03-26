@@ -1,7 +1,7 @@
 package Minggu5;
 
 import java.util.Scanner;
-
+//commit ulang
 public class mainPangkat {
     public static void main(String[] args) {
         Scanner sc14 = new Scanner(System.in);

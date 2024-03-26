@@ -2,7 +2,7 @@ package Minggu5;
 
 public class pangkat {
     public int angka, pangkat;
-
+//commit ulang
     double pangkatBF(int a, int n) {
         double hasil = 0;
         for (int i = 0; i < n; i++) {
