@@ -6,7 +6,7 @@ public class mainFaktorial {
     public static void main(String[] args) {
         Scanner sc14 = new Scanner(System.in);
         System.out.println("-------------------");
-        System.out.println("masukkan jumlah elemen: ");
+        System.out.println("Masukkan jumlah elemen: ");
         int ijml = sc14.nextInt();
         faktorial[] fk= new faktorial[10];
         for (int i = 0; i < ijml; i++) {

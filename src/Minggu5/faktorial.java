@@ -9,7 +9,7 @@ public class faktorial {
         }
         return fakto;
     }
-    int faktorialDC (int n){
+    int faktorialDC (int n){ //commit ulang
         if (n==1){
             return 1;
         }else{
