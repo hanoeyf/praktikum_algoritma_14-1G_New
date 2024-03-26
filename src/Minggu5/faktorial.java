@@ -1,16 +1,14 @@
 package Minggu5;
 
 public class faktorial {
-    public int faktorialBF(int n) {
-        int i = 1;
-        int fakto = 1;
-        while (i <= n) {
+    public int nilai;
+    int faktorialBF(int n){
+        int fakto=1;
+        for (int i = 1; i <= n; i++) {
             fakto *= i;
-            i++;
         }
         return fakto;
     }
-    
     int faktorialDC (int n){ //commit ulang
         if (n==1){
             return 1;
