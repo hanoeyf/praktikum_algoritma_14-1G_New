@@ -28,5 +28,8 @@ public class mainMahasiswa {
         System.out.println("====== Data setelah sorting asc berdasarkan IPK: =========");
         list.selectionsort();
         list.tampil();
+        System.out.println("====== Data setelah sorting asc berdasarkan IPK: =========");
+        list.insertionSort();
+        list.tampil();
     }
 }
