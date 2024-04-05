@@ -12,9 +12,9 @@ public class namaMahasiswa {
         ipk=i;
     }
     void tampil(){
-        System.out.println("nama = "+nama);
+        System.out.println("nama        = "+nama);
         System.out.println("tahun masuk = " + thnMasuk);
-        System.out.println("umur = "+umur);
-        System.out.println("IPK= "+ipk);
+        System.out.println("umur        = "+umur);
+        System.out.println("IPK         = "+ipk);
     }
 }

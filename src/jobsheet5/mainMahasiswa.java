@@ -19,9 +19,14 @@ public class mainMahasiswa {
 
         System.out.println("=============== Data sebelum diurutkan: ================");
         list.tampil();
-        list.bubleSort();
         System.out.println("========================================================");
         System.out.println("====== Data setelah diurutkan berdasarkan IPK: =========");
+        list.bubleSort();
+        list.tampil();
+        System.out.println("=============== Data sebelum di sorting: ================");
+        list.tampil();
+        System.out.println("====== Data setelah sorting asc berdasarkan IPK: =========");
+        list.selectionsort();
         list.tampil();
     }
 }

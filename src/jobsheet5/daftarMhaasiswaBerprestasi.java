@@ -21,7 +21,7 @@ public class daftarMhaasiswaBerprestasi {
         }}
         void bubleSort(){
             for (int i = 0; i < listMhs.length-1; i++) {
-                for (int j = 0; j < listMhs.length-i-1; j++) {
+                for (int j = 0; j < listMhs.length-1; j++) {
                     if (listMhs[j].ipk<listMhs[j+1].ipk){
                         namaMahasiswa tmp = listMhs[j];
                         listMhs[j]=listMhs[j + 1];
@@ -30,4 +30,16 @@ public class daftarMhaasiswaBerprestasi {
                 }
             }
         }
-    }
+        void selectionsort(){
+            for (int i = 0; i < listMhs.length-1; i++) {
+                int idxMin=i;
+                for (int j = i+1; j<listMhs.length; j++){
+                    if (listMhs[j].ipk<listMhs[idxMin].ipk){
+                        idxMin=j;
+                    }
+            }
+            namaMahasiswa tmp = listMhs[idxMin];
+            listMhs[idxMin]=listMhs[i];
+            listMhs[i]=tmp;
+        }
+    }}
