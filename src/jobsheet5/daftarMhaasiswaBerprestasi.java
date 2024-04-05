@@ -46,7 +46,7 @@ public class daftarMhaasiswaBerprestasi {
         for (int i = 0; i < listMhs.length; i++) {
             namaMahasiswa tmp  = listMhs[i];
             int j=i;
-            while (j> 0 && listMhs[j-1].ipk>tmp.ipk) {
+            while (j> 0 && listMhs[j-1].ipk<tmp.ipk) {
               listMhs[j] = listMhs[j - 1];
               j--;
            }
