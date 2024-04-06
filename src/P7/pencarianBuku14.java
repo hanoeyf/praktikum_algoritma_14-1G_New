@@ -1,6 +1,6 @@
 package P7;
 public class pencarianBuku14 {
-    buku listBk[]= new buku[5];
+    buku listBk[]= new buku[2];
     int idx;
     void tambah (buku m){
         if (idx < listBk.length){
@@ -23,19 +23,19 @@ public class pencarianBuku14 {
             } }
         return posisi;
     }
-    public int findBinarySearch(int cari, int left, int right){
+    public int findBinarySearch(int cari, int left, int right) {
         int mid;
-        if (right >=left) {
-            mid = left +(right-left)/2;
-            if (cari==listBk[mid].kodeBuku){
+        if (left >= right) {
+            mid = left + (right - left) / 2;
+            if ( listBk[mid].kodeBuku==cari) {
                 return mid;
-                }else if ( listBk[mid].kodeBuku > cari ){
-                    return findBinarySearch(cari, left, mid-1);
-                }else {
-                return findBinarySearch(cari, mid +1, right);           
-                 }
-             }
-             return -1;
+            } else if (listBk[mid].kodeBuku > cari) {
+                return findBinarySearch(cari, mid - 1, right);
+            } else {
+                return findBinarySearch(cari,left, mid - 1 );
+            }
+        }
+        return -1;
     }
     public void tampilPosisi (int x, int pos){
         if (pos!=-1){

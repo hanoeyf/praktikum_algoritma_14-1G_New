@@ -4,11 +4,11 @@ public class buku {
     int kodeBuku,tahunTerbit, stock;
     String judulBuku, pengarang;
 public buku(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, int stock){
-    this.kodeBuku=kodeBuku;
-    this.judulBuku = judulBuku;
-    this.tahunTerbit = tahunTerbit;
-    this.pengarang = pengarang;
-    this.stock = stock;
+    kodeBuku=kodeBuku;
+    judulBuku = judulBuku;
+    tahunTerbit = tahunTerbit;
+    pengarang = pengarang;
+    stock = stock;
 }
 public void tampilDataBuku (){
     System.out.println("========================");
