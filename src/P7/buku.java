@@ -12,11 +12,11 @@ public buku(int kodeBuku, String judulBuku, int tahunTerbit, String pengarang, i
 }
 public void tampilDataBuku (){
     System.out.println("========================");
-    System.out.println("kode buku    :"+kodeBuku);
-    System.out.println("judul buku   : "+judulBuku);
-    System.out.println("tahun terbit : "+tahunTerbit);
-    System.out.println("Pengarang    : "+pengarang);
-    System.out.println("Stok         : "+stock);
+    System.out.println("kode buku    \t:"+kodeBuku);
+    System.out.println("judul buku   \t: "+judulBuku);
+    System.out.println("tahun terbit \t: "+tahunTerbit);
+    System.out.println("Pengarang    \t: "+pengarang);
+    System.out.println("Stok         \t: "+stock);
 }
 
     
