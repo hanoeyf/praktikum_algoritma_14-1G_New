@@ -1,5 +1,4 @@
 package JOBSHEET7;
-
 public class StackKonversi14 {
     int size, top;
     int[] tumpukanBiner;
