@@ -2,6 +2,7 @@
 import java.util.Scanner;
 public class array {
     public static void main(String[] args) {
+   
         Scanner sc14 = new Scanner(System.in);
         System.out.println("================================================================");
         System.out.println("  Masukkan nilai masing-masing matkul untuk menghitung IP anda ");
