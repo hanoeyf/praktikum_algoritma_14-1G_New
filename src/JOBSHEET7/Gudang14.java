@@ -23,6 +23,13 @@ public boolean cekPenuh(){
     return false;
 }
 }
+public boolean isEmpty(){
+    if(top==-1){
+        return true;
+    }else{
+        return false;
+    }
+}
 public void tambahBarang (Barang14 brg){ //push
  if (!cekPenuh()) {
      top++;
@@ -44,7 +51,7 @@ public  Barang14 ambilBarang () { //pop
     }
 }
 public Barang14 lihatBarangTeratas(){
-    if(top==-1){
+    if(!isEmpty()){
         Barang14 barangTeratas = tumpukan[top];
         System.out.println("barang teratas: "+ barangTeratas.nama);
         return barangTeratas;
