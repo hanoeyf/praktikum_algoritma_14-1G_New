@@ -98,13 +98,13 @@ public void print() {
         System.out.println(" jumlah elemen= " + size);
     }
 }
-// public nasabah14 peekRear() { 
-//     if (!isEmpty()){
-//         System.out.println("elemen paling belakang: "+data[rear].norek+ " "+ data[rear].nama+ " "
-//         +data[rear].alamat+ " " + data[rear].umur+" " + data[rear].saldo);
-//     }else{
-//         System.out.println("queue masih kosong");
-//     }
-//     return null;
-// }
+public nasabah14 peekRear() { 
+    if (!isEmpty()){
+        System.out.println("elemen paling belakang: "+data[rear].norek+ " "+ data[rear].nama+ " "
+        +data[rear].alamat+ " " + data[rear].umur+" " + data[rear].saldo);
+    }else{
+        System.out.println("queue masih kosong");
+    }
+    return null;
+}
 }
