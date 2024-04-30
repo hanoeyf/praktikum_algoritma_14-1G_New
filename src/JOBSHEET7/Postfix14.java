@@ -60,7 +60,7 @@ public String konversi(String Q){
         if (isOperand(c)){
             P = P +c;
         }
-        if (c=='('){
+        if (c=='('){ 
             push(c);
         }
         if (c== ')'){
