@@ -11,7 +11,16 @@ public doubleLinkedList(){
 public boolean isEmpty(){
     return head==null;
 }
-public void add
+public void addFirst(int item){
+    if(isEmpty()){
+        head = new node(null, item, null);
+    }else{
+        node newNode = new node(null, item, head);
+        head.prev = newNode;
+        head = newNode;
+    }
+    size++;
+}
 public void addLast(int item){
     if (isEmpty()){
         addFirst(item);
@@ -35,7 +44,7 @@ public void add(int item, int index) throws Exception{
         int i = 0;
         while((i<index)){
             current = current.next;
-            
+            i++;
     }
     if (current.prev == null){
         node newNode = new node(null, item, current);

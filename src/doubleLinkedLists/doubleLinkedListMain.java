@@ -7,7 +7,7 @@ public class doubleLinkedListMain {
     System.out.println("size: "+dll.size());
     System.out.println("=============================");
     dll.addFirst(3);
-    dll.addFirst(4);
+    dll.addLast(4);
     dll.addFirst(7);
     dll.print();
     System.out.println("size: "+dll.size());
