@@ -42,7 +42,7 @@ public boolean isEmpty() {
             }
             System.out.println("\nberhasil diisi");
         } else {
-            System.out.println("linked list kosong");
+            System.out.println(" linked list kosong");
         }
     }
     

@@ -59,7 +59,7 @@ import java.util.Scanner;
             
                             case 2:
                                 System.out.println("===============================================");
-                                System.out.println("Data antrian:");
+                                System.out.println(" Data antrian:");
                                 dml.print();
 
                                 break;
