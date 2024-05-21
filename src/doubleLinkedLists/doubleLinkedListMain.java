@@ -25,6 +25,8 @@ public class doubleLinkedListMain {
     dll.addLast(10);
     dll.addLast(20);
     dll.print();
+    dll.remove(2);
+    dll.print();
     System.out.println("size: "+dll.size());
     System.out.println("===================================");
     dll.removeFirst();
