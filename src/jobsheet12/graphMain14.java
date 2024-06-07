@@ -14,4 +14,3 @@ package jobsheet12;
         gedung.printGraph();
         }
         }
-
