@@ -1,16 +1,13 @@
 package jobsheet11;
-
 public class binaryTree14 {
     node14 root;
 
     public binaryTree14() {
         root = null;
     }
-
     boolean isEmpty() {
         return root == null;
     }
-
     void add(int data) {
         node14 newNode = new node14(data);
         if (isEmpty()) {
@@ -33,7 +30,6 @@ public class binaryTree14 {
                         return;
                     }
                 } else {
-                    // Data sudah ada di tree
                     return;
                 }
             }
@@ -118,7 +114,6 @@ public class binaryTree14 {
             }
         }
 
-        // If node to be deleted is a leaf (no children)
         if (current.left == null && current.right == null) {
             if (current == root) {
                 root = null;
@@ -128,7 +123,7 @@ public class binaryTree14 {
                 parent.right = null;
             }
         }
-        // If node to be deleted has only one child (right)
+   
         else if (current.left == null) {
             if (current == root) {
                 root = current.right;
@@ -138,7 +133,7 @@ public class binaryTree14 {
                 parent.right = current.right;
             }
         }
-        // If node to be deleted has only one child (left)
+      
         else if (current.right == null) {
             if (current == root) {
                 root = current.left;
@@ -148,7 +143,7 @@ public class binaryTree14 {
                 parent.right = current.left;
             }
         }
-        // If node to be deleted has two children
+       
         else {
             node14 successor = getSuccessor(current);
             if (current == root) {
